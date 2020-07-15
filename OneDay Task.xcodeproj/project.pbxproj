@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A2F451124BEF6A800E56962 /* OneDay Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OneDay Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2F451124BEF6A800E56962 /* ワンタス.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ワンタス.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2F451424BEF6A800E56962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A2F451624BEF6A800E56962 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2A2F451824BEF6A800E56962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		2A2F451224BEF6A800E56962 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A2F451124BEF6A800E56962 /* OneDay Task.app */,
+				2A2F451124BEF6A800E56962 /* ワンタス.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = "OneDay Task";
 			productName = "OneDay Task";
-			productReference = 2A2F451124BEF6A800E56962 /* OneDay Task.app */;
+			productReference = 2A2F451124BEF6A800E56962 /* ワンタス.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,9 +292,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nagai-ryo.OneDay-Task";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ワンタス";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,9 +310,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nagai-ryo.OneDay-Task";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ワンタス";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
