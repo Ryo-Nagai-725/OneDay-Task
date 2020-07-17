@@ -18,6 +18,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         self.overrideUserInterfaceStyle = .light
         tableView.delegate = self
                tableView.dataSource = self
                textFiledTodo.delegate = self
