@@ -19,22 +19,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         self.overrideUserInterfaceStyle = .light
+        self.overrideUserInterfaceStyle = .light
         tableView.delegate = self
-               tableView.dataSource = self
-               textFiledTodo.delegate = self
-               
-               
+        tableView.dataSource = self
+        textFiledTodo.delegate = self
 
+        
+        
+        
+        if UserDefaults.standard.object(forKey: "Todo") != nil {
             
-               
-               if UserDefaults.standard.object(forKey: "Todo") != nil {
-                         
-                         todoTextArray = UserDefaults.standard.object(forKey: "Todo") as! [String]
-                   
-                   
-                   
-                   tableView.reloadData()
+            todoTextArray = UserDefaults.standard.object(forKey: "Todo") as! [String]
+            
+            
+            
+            tableView.reloadData()
                      }
            
     }
@@ -53,14 +52,29 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
           //tableViewの編集モードを切り替える
           tableView.isEditing = editing//editingはBool型でeditButtonに依存する変数
     
+        
+        
 }
+    
+    @IBAction func editButton(_ sender: Any) {
+    
+        
+    }
+    
+    
     @IBAction func trashButton(_ sender: Any) {
         
+       tableView.allowsSelectionDuringEditing = true
+        
+        UserDefaults.standard.set(todoTextArray, forKey: "Todo")
         if(tableView.isEditing == true) {
                  tableView.isEditing = false
                     } else {
                  tableView.isEditing = true
                     }
+      
+        
+        
     }
     
   func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -145,7 +159,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
     
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+         let targetTitle:String = todoTextArray[sourceIndexPath.row]
+        todoTextArray.remove(at: sourceIndexPath.row)
+        todoTextArray.insert(targetTitle, at: destinationIndexPath.row)
+        
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return view.frame.size.height/15

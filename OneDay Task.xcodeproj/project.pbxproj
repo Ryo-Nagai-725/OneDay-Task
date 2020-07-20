@@ -11,8 +11,8 @@
 		2A2F451724BEF6A800E56962 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F451624BEF6A800E56962 /* SceneDelegate.swift */; };
 		2A2F451924BEF6A800E56962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F451824BEF6A800E56962 /* ViewController.swift */; };
 		2A2F451C24BEF6A800E56962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F451A24BEF6A800E56962 /* Main.storyboard */; };
-		2A2F451E24BEF6A900E56962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F451D24BEF6A900E56962 /* Assets.xcassets */; };
 		2A2F452124BEF6A900E56962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F451F24BEF6A900E56962 /* LaunchScreen.storyboard */; };
+		2A6F7DFF24C1D7D100F1D9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6F7DFE24C1D7D100F1D9D8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		2A2F451624BEF6A800E56962 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2A2F451824BEF6A800E56962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2A2F451B24BEF6A800E56962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2A2F451D24BEF6A900E56962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A2F452024BEF6A900E56962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A2F452224BEF6A900E56962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A6F7DFE24C1D7D100F1D9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../TodoDay/TodoDay/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 				2A2F451624BEF6A800E56962 /* SceneDelegate.swift */,
 				2A2F451824BEF6A800E56962 /* ViewController.swift */,
 				2A2F451A24BEF6A800E56962 /* Main.storyboard */,
-				2A2F451D24BEF6A900E56962 /* Assets.xcassets */,
+				2A6F7DFE24C1D7D100F1D9D8 /* Assets.xcassets */,
 				2A2F451F24BEF6A900E56962 /* LaunchScreen.storyboard */,
 				2A2F452224BEF6A900E56962 /* Info.plist */,
 			);
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2F452124BEF6A900E56962 /* LaunchScreen.storyboard in Resources */,
-				2A2F451E24BEF6A900E56962 /* Assets.xcassets in Resources */,
+				2A6F7DFF24C1D7D100F1D9D8 /* Assets.xcassets in Resources */,
 				2A2F451C24BEF6A800E56962 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +291,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "nagai-ryo.OneDay-Task";
 				PRODUCT_NAME = "ワンタス";
 				SWIFT_VERSION = 5.0;
@@ -309,6 +310,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "nagai-ryo.OneDay-Task";
 				PRODUCT_NAME = "ワンタス";
 				SWIFT_VERSION = 5.0;
