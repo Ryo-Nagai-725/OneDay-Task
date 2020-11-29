@@ -23,7 +23,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.delegate = self
         tableView.dataSource = self
         textFiledTodo.delegate = self
-
+        tableView.layer.cornerRadius = 20
+        
         
         
         
@@ -56,11 +57,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
 }
     
-    @IBAction func editButton(_ sender: Any) {
-    
-        
-    }
-    
     
     @IBAction func trashButton(_ sender: Any) {
         
@@ -73,6 +69,18 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                  tableView.isEditing = true
                     }
       
+        
+        
+    }
+    @IBAction func tapShareButton(_ sender: Any) {
+        let text = """
+                OneDay Task
+                今日やること！！
+                \(todoTextArray)
+        """
+                let shareItems = [text] as [Any]
+                let controller = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+                present(controller, animated: true, completion: nil)
         
         
     }
@@ -125,9 +133,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let defaultAction: UIAlertAction = UIAlertAction(title: "完了", style: UIAlertAction.Style.default,handler:{ (action:UIAlertAction!)-> Void in
              tableView.allowsMultipleSelection = true
                    cell?.accessoryType = .checkmark
-                   cell?.backgroundColor = .gray
+                   cell?.backgroundColor = .white
                    cell?.textLabel?.text = "完了"
-                   cell?.textLabel?.textColor = UIColor.white
+                   cell?.textLabel?.textColor = UIColor.purple
                    cell?.textLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
         })
 
@@ -174,6 +182,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return view.frame.size.height/15
     }
 
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         todoTextArray.append(textFiledTodo.text!)
